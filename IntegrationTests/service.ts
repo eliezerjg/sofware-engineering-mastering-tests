@@ -26,9 +26,9 @@ class Service implements  TestableService{
         }
 
         if(errors.length > 0){
-            console.error("INTEGRATION FATAL ERROR: \n");
+            console.error("INTEGRATION FATAL ERROR(S):");
             for(let error of errors){
-                console.error(error);
+                console.error("[FAIL]: " + error);
             }
             return false;
         }
