@@ -1,6 +1,5 @@
 interface Formatter{
     format(value: number, locale?: string): string;
-    format(value: number): string;
 }
 class FormatterImpl implements Formatter{
     defaultLocale = "en-US";
