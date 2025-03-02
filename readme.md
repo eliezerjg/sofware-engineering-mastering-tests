@@ -1,4 +1,0 @@
-1 - INTEGRATION TESTS  
-<BR/>
-2 - ACCEPTANCE TESTS
-AcceptanceTests
