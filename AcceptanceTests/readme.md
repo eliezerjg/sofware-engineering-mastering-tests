@@ -11,12 +11,5 @@ the ecommerce should sells shoes, bags and others,
 * The total values after taxes and payment options *
 
 If all the requirements is ok, when the test will be accepted
-
 </pre>
 
-<BR>
-TEST TECHNIQUES
-<pre>
-1 - Acceptance Test * Will guarantee the needs of our Customer*
-2 - BlackBox * customer tests in the end in a sandbox *, 
-</pre>
