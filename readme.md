@@ -13,5 +13,5 @@ Here, you'll find:
 - Practical examples of testing techniques.
 - Code snippets and projects written in TypeScript.
 - Insights and best practices for software testing.
-- Simplicity without libraries
+- Simplicity 
 </pre>
