@@ -15,10 +15,10 @@ class BlackBoxTestImpl implements BlackBoxTest{
     runBlackBoxTest(): void {
         // user only knows the button for click (interface)
         const action : FakeBrowserAction = new FakeBrowserActionImpl();
-        const userMessage = action.pressButton("button");
+        const actionResult = action.pressButton("button");
         console.warn("USER CLICKED ON DOM BUTTON");
-        this.fancyTestingLibrary.assertEquals(userMessage, "I have been clicked");
-        console.log(`[SUCCESS] USER RECEIVED - ${userMessage}`);
+        this.fancyTestingLibrary.assertEquals(actionResult, "I have been clicked");
+        console.log(`[SUCCESS] USER RECEIVED - ${actionResult}`);
     }
 
 }
