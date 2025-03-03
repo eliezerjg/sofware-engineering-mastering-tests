@@ -16,6 +16,7 @@ interface EcommerceUseCase {
 
 class EcommerceUseCaseImpl implements EcommerceUseCase, TestableUseCase{
     runTestableUseCase(): void {
+        // lets pretend this is a runtime test with input
         let user : User = new UserImpl();
         user.setEmail("usuario@email.com");
         user.setName("nome");
@@ -65,7 +66,8 @@ class EcommerceUseCaseImpl implements EcommerceUseCase, TestableUseCase{
 
         const checkout : Checkout = new CheckoutImpl();
         checkout.doCheckout(cart);
-
+        // the user tested it and accepted the flux
+        console.log("[SUCCESS] THE USER TESTED IN RUNTIME AND ACCEPTED IT");
     }
 
 }
