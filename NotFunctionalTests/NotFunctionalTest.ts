@@ -17,7 +17,7 @@ class NotFunctionalTestImpl implements NotFunctionalTest{
             let printerFormat = printer.printForLocale("en-US");
             const end = Date.now();
 
-            console.log(`${index} - COSTS ${end - start} MS TO RUN.`);
+            console.log(`[${new Date().toISOString()}] [PERFORMANCE BENCHMARK TEST] ${index} - COSTS ${end - start} MS TO RUN.`);
         }
 
     }
