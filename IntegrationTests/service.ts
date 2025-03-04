@@ -10,6 +10,7 @@ interface TestableService{
 
 class Service implements  TestableService{
     runIntegrationTest(): boolean {
+        console.warn("NOTE: SHOULD FAIL MODULE B");
         const TEST : FancyTestingLibrary =  new FancyTestingLibraryImpl();
 
         let modules = [ModuleAImpl, ModuleBImpl];
