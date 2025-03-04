@@ -37,5 +37,5 @@ class Service implements  TestableService{
     }
 }
 
-let serviceInstance = new Service();
+let serviceInstance : TestableService = new Service();
 serviceInstance.runIntegrationTest();
