@@ -5,6 +5,7 @@ import ShoppingItem from "./ShoppingItem";
 import ShoppingItemImpl from "./ShoppingItem";
 import Checkout from "./Checkout";
 import CheckoutImpl from "./Checkout";
+import FancyTestingLibrary from "./FancyTestingLibrary/FancyTestingLibrary";
 
 interface TestableUseCase{
     runTestableUseCase() : void;
@@ -15,8 +16,8 @@ interface EcommerceUseCase {
 }
 
 class EcommerceUseCaseImpl implements EcommerceUseCase, TestableUseCase{
+
     runTestableUseCase(): void {
-        // lets pretend this is a runtime test with input
         let user : User = new UserImpl();
         user.setEmail("usuario@email.com");
         user.setName("nome");
@@ -65,9 +66,9 @@ class EcommerceUseCaseImpl implements EcommerceUseCase, TestableUseCase{
         cart.removeItem(item1);
 
         const checkout : Checkout = new CheckoutImpl();
-        checkout.doCheckout(cart);
-        // the user tested it and accepted the flux
-        console.log("[SUCCESS] THE USER TESTED IN RUNTIME AND ACCEPTED IT");
+        const checkoutSucceed = checkout.doCheckout(cart);
+        const fancyTestingLibrary : FancyTestingLibrary = new FancyTestingLibrary();
+        fancyTestingLibrary.assertEquals(checkoutSucceed, true, "Flux Checkout Process");
     }
 
 }
